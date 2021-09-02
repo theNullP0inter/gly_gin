@@ -580,6 +580,8 @@ github.com/theNullP0inter/googly v0.0.0-20210816140803-8c1c58cc372d h1:VGL2dxnL/
 github.com/theNullP0inter/googly v0.0.0-20210816140803-8c1c58cc372d/go.mod h1:ShAayoRj4FhuQgucwNtKxEoYXjuygZnGV+BVoT6tvtI=
 github.com/theNullP0inter/googly v0.0.0-20210822121707-891636bdd0f8 h1:G6aMU75yR7VaiEyJW8oNOWAdyH73YMQQ548/AFYZoBE=
 github.com/theNullP0inter/googly v0.0.0-20210822121707-891636bdd0f8/go.mod h1:PIY9rOS6sDl7XiXyBFL/nItwwxsUvxGUxPE7OqKl14o=
+github.com/theNullP0inter/googly v0.0.0-20210901164321-06f6fed696e0 h1:kFL/wl/DWAQUyQY+TMtHh9iy4ZeaaHXFK7T+gDGAf04=
+github.com/theNullP0inter/googly v0.0.0-20210901164321-06f6fed696e0/go.mod h1:PIY9rOS6sDl7XiXyBFL/nItwwxsUvxGUxPE7OqKl14o=
 github.com/thedevsaddam/govalidator v1.9.10/go.mod h1:Ilx8u7cg5g3LXbSS943cx5kczyNuUn7LH/cK5MYuE90=
 github.com/tidwall/pretty v0.0.0-20180105212114-65a9db5fad51/go.mod h1:XNkn88O1ChpSDQmQeStsy+sBenx6DDtFZJxhVysOjyk=
 github.com/tidwall/pretty v1.0.0/go.mod h1:XNkn88O1ChpSDQmQeStsy+sBenx6DDtFZJxhVysOjyk=
@@ -845,6 +847,8 @@ golang.org/x/sys v0.0.0-20210820121016-41cdb8703e55 h1:rw6UNGRMfarCepjI8qOepea/S
 golang.org/x/sys v0.0.0-20210820121016-41cdb8703e55/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/sys v0.0.0-20210831042530-f4d43177bf5e h1:XMgFehsDnnLGtjvjOfqWSUzt0alpTR1RSEuznObga2c=
 golang.org/x/sys v0.0.0-20210831042530-f4d43177bf5e/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
+golang.org/x/sys v0.0.0-20210902050250-f475640dd07b h1:S7hKs0Flbq0bbc9xgYt4stIEG1zNDFqyrPwAX2Wj/sE=
+golang.org/x/sys v0.0.0-20210902050250-f475640dd07b/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/term v0.0.0-20201126162022-7de9c90e9dd1/go.mod h1:bj7SfCRtBDWHUb9snDiAeCFNEtKQo2Wmx5Cou7ajbmo=
 golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
 golang.org/x/text v0.3.0/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
