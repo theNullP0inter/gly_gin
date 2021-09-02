@@ -55,7 +55,7 @@ func (c *BaseGinController) HttpResponse(context *gin.Context, obj interface{}, 
 
 // HttpReplySuccess sends user a http response with 200 status code and given data.
 func (c *BaseGinController) HttpReplySuccess(context *gin.Context, data interface{}) {
-	c.HttpResponse(context, gin.H{"data": data}, http.StatusOK)
+	c.HttpResponse(context, data, http.StatusOK)
 }
 
 // HttpReplyGinBindError sends user a http response with status code 422 and a set of validation errors.
@@ -64,8 +64,8 @@ func (c *BaseGinController) HttpReplyGinBindError(context *gin.Context, err erro
 	e := &controller.HttpError{
 		Code:    422,
 		Message: controller.ErrHttpInvalidRequest,
-		Err:     nil,
-		Errors:  err.Error(),
+		Err:     err,
+		Errors:  nil,
 	}
 	HandleHttpError(context, e)
 }
@@ -85,10 +85,10 @@ func (c *BaseGinController) HttpReplyGinPathParamError(context *gin.Context, err
 // HttpReplyGinPathParamError sends user a http response with status code 404.
 func (c *BaseGinController) HttpReplyGinNotFoundError(context *gin.Context, err error) {
 	e := &controller.HttpError{
-		Code:    400,
+		Code:    404,
 		Message: controller.ErrHttpInvalidRequest,
-		Err:     nil,
-		Errors:  err.Error(),
+		Err:     err,
+		Errors:  nil,
 	}
 	HandleHttpError(context, e)
 }
@@ -105,7 +105,7 @@ func (c *BaseGinController) HttpReplyServiceError(context *gin.Context, err *ser
 }
 
 // NewBaseGinController creates a new BaseGinController
-func NewBaseGinController(logger logger.GooglyLoggerInterface) *BaseGinController {
+func NewBaseGinController(logger logger.GooglyLogger) *BaseGinController {
 	con := controller.NewBaseController(logger)
 	return &BaseGinController{
 		con,
