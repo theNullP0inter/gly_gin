@@ -17,7 +17,7 @@ require (
 	github.com/go-playground/validator/v10 v10.8.0 // indirect
 	github.com/golang-migrate/migrate v3.5.4+incompatible // indirect
 	github.com/golang-migrate/migrate/v4 v4.14.1 // indirect
-	github.com/google/uuid v1.3.0 // indirect
+	github.com/google/uuid v1.3.0
 	github.com/jinzhu/copier v0.3.2
 	github.com/jinzhu/gorm v1.9.16 // indirect
 	github.com/kylelemons/go-gypsy v1.0.0 // indirect
@@ -32,7 +32,7 @@ require (
 	github.com/stretchr/objx v0.3.0 // indirect
 	github.com/stretchr/testify v1.7.0
 	github.com/swaggo/swag v1.7.0 // indirect
-	github.com/theNullP0inter/googly v0.0.0-20210901164321-06f6fed696e0
+	github.com/theNullP0inter/googly v0.0.0-20210902122635-3066436b9094
 	github.com/thedevsaddam/govalidator v1.9.10 // indirect
 	github.com/ugorji/go v1.2.6 // indirect
 	go.mongodb.org/mongo-driver v1.7.1 // indirect
