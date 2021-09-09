@@ -166,7 +166,7 @@ func (s *BaseGinCrudController) Delete(c *gin.Context) {
 }
 
 // NewBaseGinCrudController creates a new BaseGinCrudController
-func NewBaseGinCrudController(logger logger.GooglyLogger,
+func NewBaseGinCrudController(logger *logger.GooglyLogger,
 	service service.CrudService,
 	hydrator GinQueryParametersHydrator,
 	createRequest controller.Serializer,

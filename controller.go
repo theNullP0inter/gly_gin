@@ -105,7 +105,7 @@ func (c *BaseGinController) HttpReplyServiceError(context *gin.Context, err *ser
 }
 
 // NewBaseGinController creates a new BaseGinController
-func NewBaseGinController(logger logger.GooglyLogger) *BaseGinController {
+func NewBaseGinController(logger *logger.GooglyLogger) *BaseGinController {
 	con := controller.NewBaseController(logger)
 	return &BaseGinController{
 		con,

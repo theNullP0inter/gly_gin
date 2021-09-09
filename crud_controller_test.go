@@ -18,7 +18,7 @@ type MockSerializer struct {
 }
 
 func TestBaseGinCrudControllerCreate(t *testing.T) {
-	l := new(logger.MockGooglyLogger)
+	l := logger.NewGooglyLogger()
 	s := new(service.MockCrudService)
 	h := new(MockGinQueryParametersHydrator)
 
@@ -48,7 +48,7 @@ func TestBaseGinCrudControllerCreate(t *testing.T) {
 }
 
 func TestBaseGinCrudControllerGet(t *testing.T) {
-	l := new(logger.MockGooglyLogger)
+	l := logger.NewGooglyLogger()
 	s := new(service.MockCrudService)
 	h := new(MockGinQueryParametersHydrator)
 
@@ -72,7 +72,7 @@ func TestBaseGinCrudControllerGet(t *testing.T) {
 }
 
 func TestBaseGinCrudControllerList(t *testing.T) {
-	l := new(logger.MockGooglyLogger)
+	l := logger.NewGooglyLogger()
 	s := new(service.MockCrudService)
 	h := new(MockGinQueryParametersHydrator)
 
@@ -97,7 +97,7 @@ func TestBaseGinCrudControllerList(t *testing.T) {
 }
 
 func TestBaseGinCrudControllerUpdate(t *testing.T) {
-	l := new(logger.MockGooglyLogger)
+	l := logger.NewGooglyLogger()
 	s := new(service.MockCrudService)
 	h := new(MockGinQueryParametersHydrator)
 
@@ -132,7 +132,7 @@ func TestBaseGinCrudControllerUpdate(t *testing.T) {
 }
 
 func TestBaseGinCrudControllerDelete(t *testing.T) {
-	l := new(logger.MockGooglyLogger)
+	l := logger.NewGooglyLogger()
 	s := new(service.MockCrudService)
 	h := new(MockGinQueryParametersHydrator)
 

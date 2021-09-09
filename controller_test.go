@@ -31,7 +31,7 @@ func TestHandleHttpError(t *testing.T) {
 func TestBaseGinController(t *testing.T) {
 	w := httptest.NewRecorder()
 	c, _ := gin.CreateTestContext(w)
-	l := new(logger.MockGooglyLogger)
+	l := logger.NewGooglyLogger()
 
 	res := map[string]string{"foo": "bar"}
 	b_res, _ := json.Marshal(gin.H{
@@ -74,6 +74,6 @@ func TestBaseGinController(t *testing.T) {
 
 func TestNewBaseGinController(t *testing.T) {
 	// Testing for panic
-	l := new(logger.MockGooglyLogger)
+	l := logger.NewGooglyLogger()
 	_ = NewBaseGinController(l)
 }
